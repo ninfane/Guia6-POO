@@ -11,13 +11,13 @@ struct Par {
 
 int main() {
 	
-	ofstream aout("grupo.dat",ios::binary);
+	ofstream aout("grupo.dat",ios::binary|ios::trunc);
 	if(!aout.is_open()){
 		cout << "error";
 		return 1;
 	}
 	
-	vector<Par> v(200);
+	vector<Par> v(20);
 	for(size_t i=0;i<v.size();i++) { 
 		v[i].i = rand()%101;
 		v[i].f = (rand()%101)/20.5;
