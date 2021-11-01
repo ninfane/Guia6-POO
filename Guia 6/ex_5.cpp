@@ -32,9 +32,7 @@ public:
 			file.read(reinterpret_cast<char*>(&x),sizeof(x));
 			v.push_back(x);
 		}
-		for(size_t i=0;i<v.size();i++) { 
-			sort(v.begin(),v.end());
-		}
+		sort(v.begin(),v.end());
 	}
 	void IngresarPuntaje(int p){
 		inserta(v,p);
