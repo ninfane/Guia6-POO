@@ -15,6 +15,7 @@ int main() {
 	for(int i=0;i<10;i++) { 
 		int x = rand()%101;
 		archi.write(reinterpret_cast<char*>(&x),sizeof(float));
+		cout << x << " ";
 	}
 	
 	archi.close();
